@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenido">
+        <h2>Calculadora de propina</h2>
+        <p> Costo de la comida: <input type="number" id="money" />$</p>
+        <p>Porcentaje en propina: </p>
+        <div class="rango">
+            <input id="range" class="range" type="range" min="0" max="100" value="0" step="1" onchange="calPropina(this.value, 'money')">
+            <span id="deslival">%</span>
+        </div>
+        <h1>Propina a dejar: </h1>
+        <span id="propina"></span>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
