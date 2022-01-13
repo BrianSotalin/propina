@@ -133,6 +133,34 @@ span {
     color: rgb(96, 158, 96)
 }
 /* 
+FOOTER
+*/
+footer{
+    margin-top: -200px;
+    text-align: center;
+    }
+    footer p{
+      font-size: 15px;
+      font-weight: bold;
+      color: darkslategrey;
+    }
+    footer .social{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    }
+    footer a{
+      margin: 30px ;
+     padding: 30px;
+      color: black;
+      font-size: 30px;
+      transition: .3s ease all;
+    
+    }
+    footer a:hover{
+      color: darkslategrey;
+    }
+/* 
 MODO OSCURO
 */
 body.dark{
@@ -174,6 +202,14 @@ body.dark span{
           }
 }
 */
+@media screen and (max-width:375px) {
+   footer p{
+       font-size: 12px;
+   }
+   footer a{
+       margin: 10px;
+   }
+}
 @media screen and (max-width:275px) {
     .contenido h2{
         font-size: 20px;
